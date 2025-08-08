@@ -10,18 +10,31 @@ function App() {
             <div>
                 <img src={selfPhoto} className="logo" alt="self image" />
             </div>
-            <h1>Vite + React</h1>
+            <h1>George Arnold</h1>
+            <h2>Front-End Software Developer</h2>
             <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
+                <a
+                    className="button"
+                    title="Git Hub"
+                    href="https://github.com/george-arnold-2"
+                >
+                    Git Hub
+                </a>
+                <a
+                    className="button"
+                    title="Linked In"
+                    href="https://www.linkedin.com/in/george-arnold-4382a9120/"
+                >
+                    Linked In
+                </a>
+                <a
+                    className="button"
+                    title="Email Me"
+                    href="mailto:george.arnold.88@gmail.com"
+                >
+                    Email Me
+                </a>
             </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
         </>
     );
 }
