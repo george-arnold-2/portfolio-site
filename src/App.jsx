@@ -1,17 +1,16 @@
-import { useState } from 'react';
 import selfPhoto from './assets/george-arnold-image.jpeg';
+import InfoCard from './InfoCard';
 import './App.css';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
             <div>
                 <img src={selfPhoto} className="logo" alt="self image" />
             </div>
             <h1>George Arnold</h1>
-            <h2>Front-End Software Developer</h2>
+            <p>Front-End Software Developer</p>
+            <InfoCard />
             <div className="card">
                 <a
                     className="button"

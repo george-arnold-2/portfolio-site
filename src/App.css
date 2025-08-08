@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
 .logo {
     height: 6em;
     padding: 1.5em;
@@ -41,6 +45,7 @@
     padding: 2em;
     column-gap: 1em;
     display: flex;
+    justify-content: center;
 }
 
 .read-the-docs {
