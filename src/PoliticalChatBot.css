@@ -1,0 +1,30 @@
+.project-image {
+    width: 50%;
+    margin: 1em auto;
+    display: block;
+
+}
+
+ul {
+    text-align: left;
+    grid-row-start: 3;
+    grid-column: 1 / span 4;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.info-card p.no-animation {
+    opacity: 1;
+}
+
+.skills-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+.skills-section h2 {
+    grid-column: 1 / span 4;
+}

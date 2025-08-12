@@ -1,5 +1,6 @@
 import selfPhoto from './assets/george-arnold-image.jpeg';
 import InfoCard from './InfoCard';
+import PoliticalChatBot from './PoliticalChatBot';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
             </div>
             <h1>George Arnold</h1>
             <p>Front-End Software Developer</p>
+            <PoliticalChatBot />
             <InfoCard />
             <div className="card">
                 <a
