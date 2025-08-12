@@ -1,15 +1,18 @@
 [
     {
         "title": "Why to Hire Me",
+        "titleLength": 12,
         "copy": "I’m a driven Front-End Developer who thrives on creative problem-solving and delivering meaningful user experiences. My diverse background equips me with strong communication skills and adaptability, allowing me to collaborate effectively and quickly master new technologies. I’m passionate about writing clean, efficient code and consistently delivering high-quality work that makes an impact. Bringing a fresh perspective and a commitment to growth, I’m ready to add real value to your team."
     },
     {
         "title": "My Coding Journey",
+        "titleLength": 15,
         "copy": "I started my career as a teacher before discovering my passion for coding. After teaching myself for a year, I enrolled in a web development bootcamp where I gained valuable mentorship and hands-on skills. Leveraging this foundation, I spent five years at Groove Commerce as a Front-End Developer, building engaging, user-focused websites and applications. This journey has shaped my approach to creating polished, high-performing interfaces with a strong focus on accessibility and clean code."
     },
 
     {
         "title": "How I Spend my Free Time",
+        "titleLength": 21,
         "copy": "I’m father to an amazing 4-year-old who keeps me grounded and constantly inspires me. I’m also a dedicated long-distance runner, which fits my goal-oriented nature and helps me maintain both physical and mental resilience. When I’m not running or spending time with my son, I enjoy playing D&D with friends and hosting trivia games. I was often the “trivia guy” at my last job, organizing virtual and in-person trivia events to bring teams together."
     }
 ]

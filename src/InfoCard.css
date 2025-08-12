@@ -2,6 +2,8 @@
     background-color: #1a1a1a;
     padding: 1em 2em;
     border-radius: .75em;
+    max-width: 800px;
+
 }
 
 h2 {
@@ -42,9 +44,9 @@ button:hover {
 .typing {
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid #1a1a1a;
-    width: 5%;
-    animation: typing 1s steps(30, end) forwards, blink-caret 0.7s step-end;
+    border-right: 2px solid white;
+    /* width: 5%; */
+    animation: typing 1s steps(30, end) forwards, blink-caret 0.7s step-end infinite;
     margin: 0 auto;
     text-align: center;
 }
@@ -57,9 +59,12 @@ button:hover {
 }
 
 @keyframes typing {
+    from {
+        width: 0;
+    }
+
     to {
-        width: 30ch;
-        /* number of characters */
+        width: var(--ch-length);
     }
 }
 
