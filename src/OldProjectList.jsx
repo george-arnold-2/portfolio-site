@@ -1,4 +1,4 @@
-export function OldProjectList() {
+export default function OldProjectList() {
     return (
         <>
             <p>
