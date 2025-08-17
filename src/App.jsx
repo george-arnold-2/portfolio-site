@@ -2,8 +2,30 @@ import selfPhoto from './assets/george-arnold-image.jpeg';
 import InfoCard from './InfoCard';
 import PoliticalChatBot from './PoliticalChatBot';
 import './App.css';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 function App() {
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5,
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+    };
+
     return (
         <>
             <div>
@@ -11,7 +33,10 @@ function App() {
             </div>
             <h1>George Arnold</h1>
             <p>Front-End Software Developer</p>
-            <PoliticalChatBot />
+            <Carousel responsive={responsive}>
+                <PoliticalChatBot />
+                <OldProjectList />
+            </Carousel>
             <InfoCard />
             <div className="card">
                 <a
