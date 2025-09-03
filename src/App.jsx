@@ -1,10 +1,11 @@
 import selfPhoto from './assets/george-arnold-image.jpeg';
-import InfoCard from './InfoCard';
-import PoliticalChatBot from './PoliticalChatBot';
+import InfoCard from './components/InfoCard';
+import PoliticalChatBot from './components/PoliticalChatBot';
+import CursorCalculator from './components/CursorCalculator';
 import './App.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import OldProjectList from './OldProjectList';
+import OldProjectList from './components/OldProjectList';
 
 function App() {
     const responsive = {
@@ -29,13 +30,16 @@ function App() {
 
     return (
         <>
-            <div>
-                <img src={selfPhoto} className="logo" alt="self image" />
+            <div className="self-info">
+                <div>
+                    <img src={selfPhoto} className="logo" alt="self image" />
+                </div>
+                <h1>George Arnold</h1>
+                <p>Front-End Software Developer</p>
             </div>
-            <h1>George Arnold</h1>
-            <p>Front-End Software Developer</p>
             <Carousel responsive={responsive}>
                 <PoliticalChatBot />
+                <CursorCalculator />
                 <OldProjectList />
             </Carousel>
             <InfoCard />

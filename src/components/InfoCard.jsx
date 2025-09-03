@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
-import data from './assets/data.json';
+import data from '../assets/data.json';
 import './InfoCard.css';
 
 export default function Card() {

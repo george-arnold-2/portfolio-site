@@ -1,6 +1,8 @@
+import './OldProjectList.css';
+
 export default function OldProjectList() {
     return (
-        <>
+        <div className="old-project-list">
             <p>
                 This is the work I did before my first position as a
                 professional developer, much of the work is highly dated, but
@@ -23,6 +25,6 @@ export default function OldProjectList() {
                     <a>Get Out of Your bubble</a>
                 </li>
             </ul>
-        </>
+        </div>
     );
 }

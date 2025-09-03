@@ -1,0 +1,63 @@
+.project-image {
+    width: 30%;
+    margin: 1em auto;
+    display: block;
+
+}
+
+
+
+h3 {
+    text-decoration: underline;
+}
+
+.info-card p.no-animation {
+    opacity: 1;
+}
+
+
+
+/* 
+------------
+Skills section  
+------------
+*/
+
+.skills-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+
+.skills-section ul {
+    text-align: left;
+    grid-row-start: 3;
+    grid-column: 1 / span 4;
+}
+
+.skills-section h2 {
+    grid-column: 1 / span 4;
+}
+
+@media (max-width: 767px) {
+    .skills-section {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .skills-section ul {
+        grid-column: 1 / span 2;
+        grid-row-start: 4;
+
+    }
+
+    .skills-section h2 {
+        grid-column: 1 / span 2;
+
+    }
+
+    .info-card .button {
+        display: block;
+    }
+}

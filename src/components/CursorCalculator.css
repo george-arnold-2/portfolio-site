@@ -1,5 +1,5 @@
 .project-image {
-    width: 50%;
+    width: 30%;
     margin: 1em auto;
     display: block;
 
@@ -60,4 +60,11 @@ Skills section
     .info-card .button {
         display: block;
     }
+}
+
+.calculator-card {
+    .skills-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }

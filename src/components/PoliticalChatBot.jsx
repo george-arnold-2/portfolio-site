@@ -1,4 +1,4 @@
-import PAA from './assets/PAA.png';
+import PAA from '../assets/PAA.png';
 import { useRef } from 'react';
 import './PoliticalChatBot.css';
 
