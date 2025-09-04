@@ -1,3 +1,16 @@
+/* ===========================
+   Global Layout
+=========================== */
+html,
+body {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
+html {
+    scrollbar-gutter: stable both-edges;
+}
+
 #root {
     max-width: 100%;
     width: 100%;
@@ -6,6 +19,23 @@
     /* padding: 1rem; */
 }
 
+/* ===========================
+   Typography
+=========================== */
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+/* ===========================
+   Components
+=========================== */
+
+/* Sidebar / Profile */
 .self-info {
     display: flex;
     flex-direction: column;
@@ -20,7 +50,8 @@
     border-radius: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px),
+(max-width: 480px) {
     .self-info {
         position: static;
         width: 100%;
@@ -28,7 +59,7 @@
     }
 }
 
-/* Constrain carousel on small screens */
+/* Carousel */
 .carousel-container {
     width: 100%;
     max-width: 100%;
@@ -40,36 +71,40 @@
     max-width: 100%;
 }
 
-/* Avoid horizontal scroll on small screens */
-html,
-body {
-    max-width: 100%;
-    /* overflow-x: hidden; */
-}
-
-html {
-    scrollbar-gutter: stable both-edges;
-}
-
-@media (max-width: 480px) {
-    .self-info {
-        position: static;
-        width: 100%;
-        margin-bottom: 1rem;
+@media (min-width: 1200px) {
+    .react-multi-carousel-list {
+        max-width: 700px;
+        padding-bottom: 22px;
     }
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
+/* Cards */
+.card {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1em;
+    column-gap: 1em;
 }
 
+.card .button {
+    width: auto;
+}
+
+@media (min-width: 500px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
+/* Logos */
 .logo {
     height: 6em;
     padding: 1.5em;
+    border-radius: 100px;
     will-change: filter;
     transition: filter 300ms;
-    border-radius: 100px;
 }
 
 .logo:hover {
@@ -80,6 +115,9 @@ h1 {
     filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* ===========================
+   Animations
+=========================== */
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);
@@ -93,34 +131,5 @@ h1 {
 @media (prefers-reduced-motion: no-preference) {
     a:nth-of-type(2) .logo {
         animation: logo-spin infinite 20s linear;
-    }
-}
-
-.card {
-    padding: 2em 0;
-    column-gap: 1em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 1em;
-
-    @media (min-width: 500px) {
-        flex-direction: row;
-    }
-
-}
-
-.card .button {
-    width: auto;
-}
-
-.read-the-docs {
-    color: #888;
-}
-
-@media (min-width: 1200px) {
-    .react-multi-carousel-list {
-        max-width: 700px;
-        padding-bottom: 22px;
     }
 }
