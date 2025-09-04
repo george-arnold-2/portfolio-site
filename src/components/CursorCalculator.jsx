@@ -31,10 +31,11 @@ export default function CursorCalculator() {
             <h2>Project Title: Cursor Calculator</h2>
             <p className="no-animation">
                 A modern, responsive calculator built with TypeScript and React.
-                This project demonstrates advanced TypeScript usage, React
-                hooks, and automated deployment to GitHub Pages with CI/CD
-                integration. Features include basic arithmetic operations,
-                keyboard support, and a clean, accessible user interface.
+                This project was built using Cursor AI, and it demonstrates
+                advanced TypeScript usage, React hooks, and automated deployment
+                to GitHub Pages with CI/CD integration. Features include basic
+                arithmetic operations, keyboard support, and a clean, accessible
+                user interface.
             </p>
 
             <div className="skills-section">
