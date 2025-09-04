@@ -19,6 +19,12 @@ html {
     /* padding: 1rem; */
 }
 
+@media (min-width: 1200px) {
+    #root {
+        padding-left: 272px;
+    }
+}
+
 /* ===========================
    Typography
 =========================== */
@@ -43,8 +49,8 @@ h1 {
     justify-content: center;
     width: 256px;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1em;
+    left: 1em;
     background: linear-gradient(to bottom, #8389fa, #1a1a1a);
     z-index: 100;
     border-radius: 10px;
@@ -75,6 +81,12 @@ h1 {
     .react-multi-carousel-list {
         max-width: 700px;
         padding-bottom: 22px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .react-multi-carousel-list {
+        max-width: 900px;
     }
 }
 

@@ -29,6 +29,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-size: 1.25em;
 }
 
 .old-project-list a:hover {
@@ -36,6 +37,13 @@
     text-decoration: underline;
 }
 
+.old-project-list li p {
+    text-align: center;
+    opacity: 1;
+    margin-top: 0.5em;
+}
+
+p
 /* Responsive design */
 @media (max-width: 768px) {
     .old-project-list {

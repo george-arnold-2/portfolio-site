@@ -11,19 +11,26 @@ export default function OldProjectList() {
             </p>
             <ul>
                 <li>
-                    <a>My Old Portfolio</a>
+                    <a href="https://george-arnold.github.io/my-portfolio/">
+                        My Old Portfolio
+                    </a>
+                    <p>Mostly active in 2019-2020</p>
                 </li>
                 <li>
-                    <a>My Old Github</a>
+                    <a href="https://github.com/george-arnold">My Old Github</a>
+                    <p>Mostly active in 2019-2020</p>
                 </li>
                 <li>
-                    <a>Character Sheet</a>
+                    <a href="https://github.com/george-arnold/dungeoneer-toolkit-client">
+                        Dungeoneer Toolkit
+                    </a>
+                    <p>Created in 2020 as a Thinkful Learning Project</p>
                 </li>
                 <li>
-                    <a>Budgeting App</a>
-                </li>
-                <li>
-                    <a>Get Out of Your bubble</a>
+                    <a href="https://github.com/george-arnold/simple-budget">
+                        Simple Budget
+                    </a>
+                    <p>Created in 2020 as a Thinkful Learning Project</p>
                 </li>
             </ul>
         </div>
