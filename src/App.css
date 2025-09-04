@@ -1,8 +1,9 @@
 #root {
-    max-width: 1280px;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
-    padding: 2rem;
     text-align: center;
+    /* padding: 1rem; */
 }
 
 .self-info {
@@ -10,13 +11,52 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    position: absolute;
+    width: 256px;
+    position: fixed;
     top: 0;
     left: 0;
     background: linear-gradient(to bottom, #8389fa, #1a1a1a);
     z-index: 100;
     border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .self-info {
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Constrain carousel on small screens */
+.carousel-container {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    max-width: 100%;
+}
+
+/* Avoid horizontal scroll on small screens */
+html,
+body {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
+html {
+    scrollbar-gutter: stable both-edges;
+}
+
+@media (max-width: 480px) {
+    .self-info {
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
 h1 {
@@ -76,4 +116,11 @@ h1 {
 
 .read-the-docs {
     color: #888;
+}
+
+@media (min-width: 1200px) {
+    .react-multi-carousel-list {
+        max-width: 700px;
+        padding-bottom: 22px;
+    }
 }

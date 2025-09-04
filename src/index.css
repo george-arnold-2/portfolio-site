@@ -6,12 +6,20 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    background: #1a1a1a;
+
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 1200px) {
+    :root {
+        background-color: #242424;
+
+    }
 }
 
 a {
@@ -30,6 +38,7 @@ body {
 
     /* min-width: 320px; */
     min-height: 100vh;
+
 }
 
 h1 {

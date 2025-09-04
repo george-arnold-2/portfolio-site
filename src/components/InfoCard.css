@@ -1,11 +1,17 @@
 .info-card {
     background-color: #1a1a1a;
-    padding: 1em 2em;
+    padding: 1em;
     border-radius: .75em;
-    max-width: 800px;
-    margin: 2em auto;
+    max-width: 700px;
+    margin: .5em auto;
 }
 
+@media (min-width: 1200px) {
+    .react-multi-carousel-item {
+        align-items: center;
+        display: flex;
+    }
+}
 
 
 h2 {

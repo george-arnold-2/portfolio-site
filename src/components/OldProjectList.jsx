@@ -2,8 +2,9 @@ import './OldProjectList.css';
 
 export default function OldProjectList() {
     return (
-        <div className="old-project-list">
-            <p>
+        <div className="old-project-list info-card">
+            <h2>Old Projects</h2>
+            <p className="fade">
                 This is the work I did before my first position as a
                 professional developer, much of the work is highly dated, but
                 showcases where I've come from

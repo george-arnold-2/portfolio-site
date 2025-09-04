@@ -37,7 +37,17 @@ function App() {
                 <h1>George Arnold</h1>
                 <p>Front-End Software Developer</p>
             </div>
-            <Carousel responsive={responsive}>
+            <Carousel
+                responsive={responsive}
+                swipeable={true}
+                draggable={true}
+                infinite={false}
+                showDots={true}
+                ssr={true}
+                containerClass="carousel-container"
+                itemClass="carousel-item"
+                removeArrowOnDeviceType={['tablet', 'mobile']}
+            >
                 <PoliticalChatBot />
                 <CursorCalculator />
                 <OldProjectList />
